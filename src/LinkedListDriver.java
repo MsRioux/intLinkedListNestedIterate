@@ -19,6 +19,6 @@ public class LinkedListDriver
              System.out.println("This node has: " + list.getDataAtNode());
              list.goToNext();
 
-         }//end while
+         }//end while  NOTE: the last node is not printed because it's hasNext is false
     }//end main method
 }//end driver class

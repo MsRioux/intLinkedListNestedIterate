@@ -23,7 +23,7 @@ public class IntLinkedList
     {
         if (head != null)
         {
-            head = head.getLink();
+            head = head.link; //
         }//end if head not null
         else
         {
@@ -40,7 +40,7 @@ public class IntLinkedList
         while (position  != null)
         {
             count++;
-            position = position.getLink();
+            position = position.link; //
 
         }//end while
 
@@ -126,6 +126,7 @@ public class IntLinkedList
             return "data: " + data + " links to: " + link;
         }//end toString
 
+/* not needed when Node is inner class
         public int getData()
         {
             return data;
@@ -135,5 +136,9 @@ public class IntLinkedList
         {
             return link;
         }
-    }// end class Node
+
+ */
+    }// end class
+
+
 }//end public class List
